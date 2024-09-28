@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.predispit.pripremapredispit.TableController">
+    <children>
+        <VBox spacing="10.0" layoutX="169.0" layoutY="81.0">
+            <TextField fx:id="searchField" promptText="Pretrazi artikle" />
+            <Button text="Pretraga artikala" onAction="#articleSearch" />
+            <TableView fx:id="tableView" layoutX="97.0" layoutY="170.0" prefHeight="200.0" prefWidth="406.0">
+                <columns>
+                    <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+                    <TableColumn fx:id="nazivColumn" prefWidth="75.0" text="Naziv" />
+                    <TableColumn fx:id="kolicinaColumn" prefWidth="75.0" text="Količina" />
+                    <TableColumn fx:id="datumColumn" prefWidth="75.0" text="Datum" />
+                    <TableColumn fx:id="vrstaColumn" prefWidth="75.0" text="Vrsta" />
+                </columns>
+            </TableView>
+        </VBox>
+    </children>
+</AnchorPane>

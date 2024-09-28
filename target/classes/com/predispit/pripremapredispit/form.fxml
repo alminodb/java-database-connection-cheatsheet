@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.event.ActionEvent?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.predispit.pripremapredispit.FormController">
+    <children>
+        <VBox alignment="TOP_CENTER" spacing="10.0" layoutX="169.0" layoutY="81.0">
+            <children>
+                <TextField fx:id="idField" promptText="ID" />
+                <TextField fx:id="nazivField" promptText="Naziv" />
+                <TextField fx:id="kolicinaField" promptText="Količina" />
+                <DatePicker fx:id="datumPicker" promptText="Datum" />
+                <ComboBox fx:id="vrstaComboBox" promptText="Vrsta" />
+                <Button text="Add Data" onAction="#addData" />
+                <Button text="Pregled svih artikala" onAction="#openTableWindow" />
+                <Button text="Pretraga artikala" onAction="#searchForArticles" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
